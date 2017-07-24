@@ -27,14 +27,11 @@ for idx, person in enumerate(each_person):
     #for t in td:
     #    print(t)
     name = td[1].contents[0]
-    id = td[2].contents[0]
     comment = td[4].contents
-    print('\n\n==========')
+    print('\n==========')
     print(idx-1)
     print(name)
-    print(id)
     print(comment)
-    #print(url)
     print()
 
     code = requests.get(url).text
